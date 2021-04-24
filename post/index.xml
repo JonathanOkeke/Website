@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project Portfolio on Jonathan Okeke</title>
+    <link>https://jonathanokeke.github.io/Website/post/</link>
+    <description>Recent content in Project Portfolio on Jonathan Okeke</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://jonathanokeke.github.io/Website/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project 1: An Autonomous Waste-Sorting Robot</title>
+      <link>https://jonathanokeke.github.io/Website/post/project-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanokeke.github.io/Website/post/project-1/</guid>
+      <description>Link to Project Video Demo
+  PROJECT SUMMARY
+Designed and built an automated waste sorting system that comprised of a robotic manipulator powered by an intelligent vision system that leveraged a convolutional neural network to perform the real-time waste classification.
+SKILLS &amp;amp; TECHNOLOGIES
+• Python • TensorFlow • OpenCV • Inverse Kinematic Modelling.
+1.THE BODY
+• Consisted of a 3-D printed 4DOF robotic arm.
+• A single web-camera served as the robot&amp;rsquo;s vision sensor.</description>
+    </item>
+    
+    <item>
+      <title>Project 2 - Pre-Owned Vehicle Sale Price Predictor</title>
+      <link>https://jonathanokeke.github.io/Website/post/project-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanokeke.github.io/Website/post/project-2/</guid>
+      <description>Link to web project
+Link to GitHub repo
+Project Summary  A web-based tool that any sedan vehicle owner can use to get an estimate of what their vehicle would be worth based on various factors. The service uses a trained XGBoost linear regression model, trained on historical vehicle data obtained from Kaggle, to make a vehicle sale price estimate. The model was wrapped as a Flask Web Application and deployed to the internet using Heroku.</description>
+    </item>
+    
+    <item>
+      <title>Project 3 - Hydrogen Vehicle Prototype Construction</title>
+      <link>https://jonathanokeke.github.io/Website/post/project-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanokeke.github.io/Website/post/project-3/</guid>
+      <description>Project Gallery
+  Project Summary As part of the annual Shell-Eco Marathon Competition, me and three other teammates designed and built a one-man hydrogen fuel cell prototype vehicle.
+With this vehicle, we set a new African Shell-Eco Marathon vehicle efficiency record which puts as in first place and qualified our team for the global finalist competition that year.
+    Team Responsibilities As part of the team I worked on :-</description>
+    </item>
+    
+    <item>
+      <title>Project 4 - Path Planning Visualiser</title>
+      <link>https://jonathanokeke.github.io/Website/post/project-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonathanokeke.github.io/Website/post/project-4/</guid>
+      <description>Link to Youtube Demo Link to GitHub repo
+Project Summary A path planning visualization that implements the A* path planning algorithm.
+Description The A*star path planning algorithm is a popular and efficient graph traversal and search algorithm that was developed in 1968 by Peter Hart, Nils Nilsson and Bertram Raphael of the Stanford Research Institute.
+I have always been fascinated by the efficiency and complexity of search algorithms and this interest led me to try and implement the algorithm myself in an interesting and visual way.</description>
+    </item>
+    
+  </channel>
+</rss>
