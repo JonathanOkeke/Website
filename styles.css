@@ -88,7 +88,7 @@ h1, h2, h3 { overflow-wrap: break-word; }
 
 .hero {
   display: grid;
-  grid-template-columns: 1.12fr .88fr;
+  grid-template-columns: 1.38fr 1fr;
   align-items: center;
   gap: clamp(2rem, 6vw, 6rem);
   padding-block: clamp(2.75rem, 4.2vw, 4rem);
@@ -109,7 +109,9 @@ h1, h2, h3 { overflow-wrap: break-word; }
 }
 .hero h1 span { color: var(--accent); }
 .lede { max-width: 37ch; color: var(--muted); font-size: clamp(1.04rem, 1.8vw, 1.27rem); }
-.hero .lede { margin-top: 1.65rem; }
+.hero-intro { max-width: 53ch; margin-top: 1.65rem; color: var(--muted); }
+.hero-intro .lede { max-width: none; color: var(--ink); }
+.hero-intro p + p { margin-top: .65rem; }
 .actions { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem 1.4rem; margin-top: 1.75rem; }
 .button, .text-link, .back-link {
   display: inline-flex;
@@ -130,13 +132,10 @@ h1, h2, h3 { overflow-wrap: break-word; }
 .text-link, .back-link { text-decoration: none; }
 .text-link:hover, .back-link:hover { color: var(--accent); text-decoration: underline; }
 .hero-photo {
-  display: grid;
-  place-items: center;
-  padding: clamp(1.25rem, 4.6vw, 3.8rem);
-  aspect-ratio: 1 / .98;
-  background: #e5e8dc;
+  width: min(100%, 26rem);
+  justify-self: end;
 }
-.hero-photo img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 50%; }
+.hero-photo img { width: 100%; height: auto; aspect-ratio: 8 / 9; object-fit: cover; object-position: center 26%; }
 
 .work-section { border-top: 1px solid var(--rule); }
 .section-heading { padding-block: 1.65rem 1.4rem; }
@@ -193,7 +192,20 @@ h1, h2, h3 { overflow-wrap: break-word; }
 .prose table { display: block; max-width: 100%; overflow: auto; text-align: left; }
 .prose th, .prose td { padding: .2rem .65rem .2rem 0; }
 .prose :is(a, code) { overflow-wrap: anywhere; }
-.resume-content > :first-child { margin-top: 0; }
+.resume-section {
+  display: grid;
+  grid-template-columns: minmax(0, 13rem) minmax(0, 44rem);
+  gap: .8rem 2rem;
+  padding-block: 1.55rem;
+  border-top: 1px solid var(--rule);
+}
+.resume-section > h2 { font: 400 1.7rem/1.15 var(--display); }
+.resume-entry h3 { margin-top: 0; }
+.resume-entry p + p { margin-top: .55rem; }
+.resume-meta { color: var(--muted); font-size: .9rem; }
+.resume-list { margin-bottom: 0; padding-left: 1.15rem; }
+.resume-list li + li { margin-top: .5rem; }
+.skills-list { margin-top: 0; }
 .case-study { padding-top: clamp(2.5rem, 5vw, 4.25rem); }
 .case-study > .meta { margin-top: 1.65rem; }
 .case-study .page-intro { padding-top: .6rem; }
@@ -216,8 +228,9 @@ h1, h2, h3 { overflow-wrap: break-word; }
 @media (max-width: 46rem) {
   .wrap { width: calc(100% - 2.5rem); }
   .hero, .about-layout { grid-template-columns: 1fr; gap: 2rem; }
+  .resume-section { grid-template-columns: minmax(0, 1fr); }
   .hero h1 { font-size: clamp(4rem, 14.5vw, 7rem); }
-  .hero-photo { width: min(100%, 29rem); padding: 1.65rem; }
+  .hero-photo { justify-self: start; }
   .about-layout .hero-photo { margin-top: 0; }
 }
 @media (max-width: 34rem) {
