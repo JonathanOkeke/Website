@@ -102,8 +102,6 @@ h1, h2, h3 { overflow-wrap: break-word; }
   text-transform: uppercase;
   color: var(--muted);
 }
-.hero-meta { display: flex; align-items: center; gap: .65rem; margin-bottom: 1.35rem; }
-.hero-meta span { width: .47rem; aspect-ratio: 1; border-radius: 50%; background: var(--accent); }
 .hero h1 {
   font: 400 clamp(4rem, 8.55vw, 8.8rem)/.86 var(--display);
   letter-spacing: -.082em;
