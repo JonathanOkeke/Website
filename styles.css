@@ -127,15 +127,16 @@ h1, h2, h3 { overflow-wrap: break-word; }
   gap: .4rem;
   min-height: 3.35rem;
   padding: .55rem clamp(.6rem, 1.65vw, .9rem);
-  border: 1px solid var(--rule);
-  background: #fcfaf5;
+  border: 1px solid var(--green);
+  background: var(--green);
+  color: var(--paper);
   font-size: .9rem;
   font-weight: 650;
   line-height: 1.25;
   text-decoration: none;
 }
-.hero-card span[aria-hidden] { color: var(--accent); }
-.hero-card:hover { border-color: var(--green); background: #edece3; }
+.hero-card:is(:hover, :focus-visible) { background: #fcfaf5; color: var(--green); }
+.hero-card:is(:hover, :focus-visible) span[aria-hidden] { color: var(--accent); }
 .actions { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem 1.4rem; margin-top: 1.75rem; }
 .button, .text-link, .back-link {
   display: inline-flex;
