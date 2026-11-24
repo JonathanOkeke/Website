@@ -24,39 +24,53 @@
   </header>
   <main id="main" class="wrap">
     <article class="case-study">
-      <a class="back-link" href="../../post/"><span aria-hidden="true">←</span> All projects</a>
-      <p class="meta">Robotics · Computer vision</p>
-          <header class="page-intro">
-      <h1>Autonomous waste-sorting robot</h1>
-      <p class="lede">A robotic arm that identifies recyclable materials with a neural network and sorts them using inverse kinematics.</p>
+      <a class="back-link" href="../"><span aria-hidden="true">←</span> Personal Projects</a>
+      <header class="project-hero">
+        <div class="project-intro">
+          <p class="meta">Robotics · Computer vision</p>
+          <h1>Autonomous waste-sorting robot</h1>
+          <p class="lede">A robotic arm that identifies recyclable materials and moves them into the right bins without a fixed pickup point.</p>
+          <a class="button" href="https://youtu.be/jpArZs5jvVg">Watch the robot demo <span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="project-cover project-cover-robot">
+          <img src="../../images/robot_sort.jpg" alt="The robotic arm picking up a recyclable item" width="503" height="734">
+        </figure>
+      </header>
 
-    </header>
-      <div class="prose project-content"><p><a href="https://youtu.be/jpArZs5jvVg">Watch the robot demo</a></p>
-<hr>
-<figure>
-    <img src="../../images/robot_sort.jpg" alt="Waste-sorting robot prototype" loading="lazy">
-</figure>
+      <dl class="project-facts">
+        <div><dt>Context</dt><dd>Final-year engineering project</dd></div>
+        <div><dt>Prototype result</dt><dd>82% average sorting accuracy</dd></div>
+        <div><dt>Tools</dt><dd>Python, TensorFlow, OpenCV</dd></div>
+      </dl>
 
-<hr>
-<h2 id="project-summary">Project summary</h2>
-<p>I designed and built an automated waste sorting system that comprised of a robotic manipulator, powered by an intelligent vision system that leveraged a convolutional neural network to perform the real-time waste classification.</p>
-<hr>
-<h2 id="skills--technologies-utilized">Tools and techniques</h2>
-<p>•  Python •  TensorFlow •  OpenCV  •  Inverse Kinematic Modelling.</p>
-<hr>
-<h3 id="the-robot-body">The Robot Body</h3>
-<p>•  Consisted of a 3-D printed 4DOF robotic arm.</p>
-<p>• A single web-camera served as the robot&rsquo;s vision sensor.</p>
-<h3 id="the-brains">The &lsquo;Brains&rsquo;</h3>
-<p>• A convolutional neural network that was trained to detect and classify the five main classes of recyclable waste materials (plastic, paper, metal, cardboard and glass).</p>
-<p>• The CNN model was trained using Transfer Learning on the the MobileNet v2 base model architecture.</p>
-<p>• Leveraged the TensorFlow and OpenCV frameworks.</p>
-<hr>
-<figure>
-    <img src="../../images/cnn_detection.jpg" alt="Neural network detecting recyclable waste" loading="lazy">
-    <figcaption>Real-time detection, segmentation, and classification.</figcaption>
-</figure>
-      </div>
+      <section class="project-section" aria-labelledby="project-summary">
+        <h2 id="project-summary">The challenge</h2>
+        <div class="prose">
+          <p>I wanted to build a system that could identify, locate, and sort five common recyclables: plastic, paper, metal, cardboard, and glass. The robot had to decide where to place each item and adjust its grip to where that item was actually sitting.</p>
+        </div>
+      </section>
+
+      <section class="project-section" aria-labelledby="skills--technologies-utilized">
+        <h2 id="skills--technologies-utilized">How it works</h2>
+        <div class="prose">
+          <h3 id="the-brains">See and classify</h3>
+          <p>A webcam captures the sorting area. I used transfer learning with MobileNetV2 to recognize and locate items in real time, with TensorFlow and OpenCV handling the vision workflow.</p>
+          <figure>
+            <img src="../../images/cnn_detection.jpg" alt="The vision system segmenting and labelling objects" width="765" height="450" loading="lazy">
+            <figcaption>Real-time detection, segmentation, and classification.</figcaption>
+          </figure>
+          <h3 id="the-robot-body">Pick and place</h3>
+          <p>I used inverse kinematics to guide the gripper of a 3D-printed arm with four degrees of freedom. The arm uses the object's detected position to pick it up and move it to the corresponding bin.</p>
+        </div>
+      </section>
+
+      <section class="project-section" aria-labelledby="robot-results">
+        <h2 id="robot-results">Testing the prototype</h2>
+        <div class="prose">
+          <p>In tests with 20 objects per task, the robot averaged 82% sorting accuracy. Changing light, inference delays, and dropped items showed where the vision and gripping systems needed improvement.</p>
+        </div>
+      </section>
+      <p class="project-next"><a class="text-link" href="../project-3/">Next project: Hydrogen vehicle prototype <span aria-hidden="true">→</span></a></p>
     </article>
   </main>
   <footer class="site-footer">

@@ -27,19 +27,23 @@
     <loc>https://jonathanokeke.github.io/Website/post/project-1/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url><!-- Temporarily hidden from the portfolio.
+<url>
     <loc>https://jonathanokeke.github.io/Website/post/project-2/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+    --><url>
     <loc>https://jonathanokeke.github.io/Website/post/project-3/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url><!-- Temporarily hidden from the portfolio.
+<url>
     <loc>https://jonathanokeke.github.io/Website/post/project-4/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url><url>
+  </url>
+    --><url>
     <loc>https://jonathanokeke.github.io/Website/resume/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
